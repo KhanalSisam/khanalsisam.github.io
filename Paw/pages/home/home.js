@@ -77,7 +77,7 @@ const calcWidth = (progress, spaces) => `${(progress/spaces *  400).toFixed()}px
 const num_spaces = (text) => text.split("{").length -1
 
 // used by the html to direct to the text page
-const goto = (id) => { window.location.href = `/pages/text/text.html#${id}` }
+const goto = (id) => { window.location.href = `/Paw/pages/text/text.html#${id}` }
 
 // calcs the last time
 const lastTime = (last) => {
@@ -97,84 +97,3 @@ const lastTime = (last) => {
     }
 }
 
-
-
-
-
-
-
-
-
-// fetch("../text/text.json")
-    // .then(response => response.json())
-    // .then(json => {
-        // const htmlList = document.createElement("div")
-        // htmlList.id = "list"
-        // json.map(info => {
-        //     let newRow = document.createElement("div")
-        //     newRow = addElement(info.id, "id", newRow)
-        //     // newRow = addElement("","progress_bar", newRow, ele="div", width = calcWidth(info))
-        //     newRow.onclick = () => goto(info.id)
-        //     info.id % 2 == 0 ? newRow.className="row even_row" : newRow.className="row odd_row"
-        //     newRow = addElement(num_spaces(info.text), "blanks",newRow )
-        //     newRow = addElement(info.source, "source",newRow )
-        //     newRow = addElement(info.time, "time", newRow)
-        //     htmlList.appendChild(newRow)
-        // })
-    //     document.getElementById("container").appendChild(htmlList)
-    //     addFromDB((textsInfo) => {
-    //         const rows = document.getElementsByClassName("row")
-    //         let row;
-    //         textsInfo.forEach(info => {
-    //             row = rows[info.id - 1]
-    //             const spaces = parseInt(row.getElementsByClassName("blanks")[0].innerHTML)
-    //             const width_ = calcWidth(info.progress, spaces)
-    //             console.log(info.last, info.id -1)
-    //             const last = lastTime(info.last)
-    //             console.log(last, info.id)
-    //             row = addElement("", "progress_bar", row, ele = "div", width = width_)
-    //             row = addElement(last, "last", row)
-    //         })
-    //         // console.log(textsInfo)
-    //         // console.log(rows)
-    //     })
-    // })
-    // .catch(err => {
-    //     console.log("failed to fetch texts from text.json, error:", err)
-    // })
-
-
-// getting data from indexed DB 
-// function addFromDB(func) {
-
-//     window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
-
-//     if (!window.indexedDB) {
-//         console.log("Your browser doesn't support a stable version of IndexedDB. Such and such feature will not be available.");
-//     }
-
-//     var request = window.indexedDB.open("log", "1");
-
-//     function getAllText(db) {
-//         const txn = db.transaction(["Texts"], "readwrite")
-//         const store = txn.objectStore("Texts")
-//         const query = store.getAll()
-
-//         query.onsuccess = event => func(event.target.result)
-        
-//         query.onerror = event => {
-//             console.log(event.target.errorCode)
-//         }
-//         txn.oncomplete = () => {
-//             db.close()
-//         }
-//     }
-
-//     request.onerror = function (event) {
-//         console.error("Database error: " + event.target.errorCode);
-//     };
-//     request.onsuccess = function (event) {
-//         const db = event.target.result
-//         getAllText(db)
-//     }
-// }
