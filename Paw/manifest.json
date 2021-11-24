@@ -21,7 +21,7 @@
         }
     ],
     "start_url":"pages/home/home.html",
-    "scope":"/",
+    "scope":"/paw/",
     "display":"fullscreen",
     "background_color":"#73c3d9",
     "theme_color":"#73c3d9"
