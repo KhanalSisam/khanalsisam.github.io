@@ -70,7 +70,7 @@ const putTime = (time) => {
             min = sec === 0 ? min - 1 : min
             sec = sec <= 0 ? 59 : sec - 1
             if (sec === 0 && min === 0) {
-                alert("You fuckin Cunt, where there is a hole theres a way, just use the bloody fuckin piece of donkey shit between ur shoulders \n      -Dalai Lama 1997")
+                alert("use the donkey shit between ur shoulders \n      -Dalai Lama 1997")
             }
             return `${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`
         } else {
@@ -78,11 +78,11 @@ const putTime = (time) => {
             sec = sec >= 59 ? 0 : sec + 1
             min = sec == 0 ? min + 1 : min
             if (sec === 0 && min === 1) {
-                alert("Dumbness has a limit, but yours is deeper then your mum's vagina \n       -Socrates")
+                alert("Dumbness has a limit  \n       -Socrates")
             } else if (sec === 0 && min === 2) {
-                alert("Be the reason why ur mom looses all her facebook friends cause ur straighter then the pole she dances on \n     -Sun Tzu")
+                alert("Be the reason why ur mom looses all her facebook friends \n     -Sun Tzu")
             } else if (sec === 0 && min === 3) {
-                window.location.href = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
+                alert("-_-")
             }
             return `-${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`
 
