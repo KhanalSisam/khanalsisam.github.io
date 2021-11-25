@@ -11,6 +11,7 @@ self.addEventListener("install", (event) => {
                 "./pages/text/text.html",
                 "./pages/text/text.js",
                 "./pages/text/check.js",
+                "./manifest.json"
                 "./text.json",
                 "./indexedDB.js",
                 "./assets/pawprint192x192.svg",
