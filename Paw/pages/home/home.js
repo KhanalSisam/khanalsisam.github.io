@@ -77,7 +77,7 @@ const calcWidth = (progress, spaces) => `${(progress/spaces *  400).toFixed()}px
 const num_spaces = (text) => text.split("{").length -1
 
 // used by the html to direct to the text page
-const goto = (id) => { window.location.href = `/Paw/pages/text/text.html#${id}` }
+const goto = (id) => { window.location.href = `https://khanalsisam.com.np/paw/pages/text/text.html#${id}` }
 
 // calcs the last time
 const lastTime = (last) => {
