@@ -20,7 +20,7 @@
             "purpose":"maskable"
         }
     ],
-    "start_url":"pages/home/home.html",
+    "start_url":"/paw/pages/home/home.html",
     "scope":"/paw/",
     "display":"fullscreen",
     "background_color":"#73c3d9",
